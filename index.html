@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>John's Stories</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/main.js"></script>
+  </head>
+  <body>
+
+    <div class="mobilenav">
+      <ul class="listone">
+        <a href="#mainbit"><li>Home</li></a>
+        <a href="#formmobile"><li>Form</li></a>
+      </ul>
+    </div>
+
+    <header>
+      <h1>John's Stories</h1>
+      <nav>
+        <div id="homenav" class="desktop">Home</div>
+        <div class="desktop">|</div>
+        <div id="lognav" class="desktop">Log</div>
+        <div class="desktop">|</div>
+        <div id="formnav" class="desktop">Form</div>
+
+        <div class="mobile">
+          <i class="fa fa-bars fa-lg"></i>
+        </div>
+      </nav>
+    </header>
+    <div id="maincontent">
+      <div id="blocker">
+      </div>
+      <div id="mainbit">
+        <p>Thank you for visiting our site. We are currently still in the process
+          of building,   so please be patient. Please come back soon and let us know about the book you received from John and where it is now.
+          </p>
+      </div>
+    <div id="log">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Book</th>
+          <th>Location</th>
+          <th>Comments</th>
+        </tr>
+        <tr>
+          <td>1st Oct 2018</td>
+          <td>Victoria Leslie-Kent</td>
+          <td>Fear the Worst by Linwood Barclay</td>
+          <td>Rishworth, UK</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="form">
+      <form action="https://formspree.io/chris.j.hardy@talk21.com"
+                    method="POST">
+                  <div class="contactdetails">
+                    <div id="name">
+                      <span>Name:</span>
+                      <input type="text" name="name" placeholder="Your name" class="inputForm">
+                    </div>
+                    <div id="bookname">
+                      <span>Book:</span>
+                      <input type="text" name="book" placeholder="Title, author" class="inputForm">
+                    </div>
+                    <div id="location">
+                      <span>Location:</span>
+                      <input type="text" name="location" placeholder="town, country" class="inputForm">
+                    </div>
+                  </div>
+                  <div id="comments">
+                    <span>Comments:</span>
+                    <textarea type="text" name="comments" placeholder="Comments">
+                    </textarea>
+                  </div>
+                  <div id="submit">
+                    <input type="submit" value="Send" class="button">
+                  </div>
+              </form>
+    </div>
+
+
+
+    </div>
+    <div id="formmobile" class="mobile">
+      <form action="https://formspree.io/chris.j.hardy@talk21.com"
+                    method="POST">
+                  <div class="contactdetails">
+                    <div id="name">
+                      <span>Name:</span>
+                      <input type="text" name="name" placeholder="Your name" class="inputForm">
+                    </div>
+                    <div id="bookname">
+                      <span>Book:</span>
+                      <input type="text" name="book" placeholder="Title, author" class="inputForm">
+                    </div>
+                    <div id="location">
+                      <span>Location:</span>
+                      <input type="text" name="location" placeholder="town, country" class="inputForm">
+                    </div>
+                  </div>
+                  <div id="comments">
+                    <span>Comments:</span>
+                    <textarea type="text" name="comments" placeholder="Comments">
+                    </textarea>
+                  </div>
+                  <div id="submit">
+                    <input type="submit" value="Send" class="button">
+                  </div>
+              </form>
+    </div>
+  </body>
+</html>

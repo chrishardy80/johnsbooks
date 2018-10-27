@@ -1,0 +1,254 @@
+body {
+
+  background-image: url('../images/IMG_2199.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.mobilenav {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 300px 30px 0 30px;
+  font-size: 24px;
+  right: -190px;
+  color: white;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(234,245,249,0.8);
+  line-height: 2;
+  border-left: #444041 2px solid;
+
+}
+
+.mobilenav ul {
+  list-style-type: none;
+  color: #444041;
+}
+
+a {
+  color: #444041;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444041;
+  padding: 30px 50px;
+  border-bottom: 4px solid #444041;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav {
+  display: flex;
+  font-size: 25px;
+}
+
+nav div {
+  padding: 0 20px;
+  transition: all 250ms ease-out 100ms;
+}
+
+nav div:hover {
+  color: orange;
+}
+
+.mobile {
+  display: none;
+}
+
+#maincontent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px;
+  height: 80vh;
+
+}
+
+#blocker {
+  width: 40%;
+}
+
+#mainbit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 60%;
+  font-family: 'Quattrocento', serif;
+}
+
+#mainbit p {
+  width: 80%;
+  font-size: 32px;
+}
+
+#log {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  width: 65%;
+  height: 80vh;
+  font-family: 'Quattrocento', serif;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#log table, th, td {
+    border: 2px solid #444041;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#log table {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#log th {
+  background-color: #444041;
+  color: white;
+}
+
+#log td {
+  color: #444041;
+  background-color: rgba(201, 199, 199, 0.2);
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 65%;
+  height: 80vh;
+  font-family: 'Quattrocento', serif;
+  padding: 20px;
+  border-radius: 5px;
+  color: #444041;
+}
+
+form {
+  border: 2px solid #444041;
+  font-size: 20px;
+  background-color: #444041;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#name,
+#bookname,
+#location,
+#comments,
+#submit {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.contactdetails input,
+textarea {
+  width: 500px;
+}
+
+textarea {
+  height: 100px;
+}
+
+#submit input {
+  width: 100px;
+}
+
+#submit {
+  display: flex;
+  align-items: center;
+}
+
+#formmobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+  background-color: #daebf2;
+}
+
+#formmobile form {
+  height: 370px;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-image: url('../images/IMG_2199(1).jpg');
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #maincontent {
+    position: relative;
+    top: 90px;
+    align-items: flex-start;
+    height: 97vh;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .mobilenav {
+    display: flex;
+  }
+
+  header {
+    position: fixed;
+    background-image: url('../images/IMG_2199(1).jpg');
+    width: 90%;
+    z-index: 1;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  #mainbit {
+    color: #444041;
+    width: 50%;
+    padding-top: 50px;
+  }
+
+  #mainbit p {
+    width: 100%;
+  }
+
+  #blocker {
+    width: 50%;
+  }
+}
