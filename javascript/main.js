@@ -28,11 +28,11 @@ $('#lognav').on('click',
         $('.mobilenav').animate({'right': '0'});
     });
 
-    $('#maincontent').click(function(e) {
+    $('#content').click(function(e) {
       if( $(e.target).closest(".mobile").length > 0 ) {
         return false;
     }
-        $('.mobilenav').animate({'right': '-190'});
+        $('.mobilenav').animate({'right': '-220'});
     });
 }
 $(document).ready(main);
