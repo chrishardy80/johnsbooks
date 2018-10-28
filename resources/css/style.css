@@ -3,7 +3,6 @@
   background-image: url('../images/IMG_2199.jpg');
   background-size: cover;
   height: 100vh;
-  color: white;
 }
 
 .mobilenav {
@@ -81,13 +80,22 @@ header {
 }
 
 nav {
+  position: relative;
+  top: 5px;
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 nav div {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: all 250ms ease-out 100ms;
+  padding: 0 5px;
+}
+
+nav div span {
+  font-size: 10px;
 }
 
 nav div:hover {
@@ -100,10 +108,11 @@ nav div:hover {
 
 #maincontent {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   padding: 30px;
   height: 80vh;
+  padding-top: 40px;
 }
 
 #blocker {
@@ -113,16 +122,18 @@ nav div:hover {
 #mainbit {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-bottom: 30px;
-  width: 60%;
+  width: 80%;
   font-family: 'Quattrocento', serif;
+  text-align: justify;
 }
 
 #mainbit p {
   width: 80%;
   font-size: 32px;
+  margin-bottom: 10px;
 }
 
 #log {
@@ -209,6 +220,10 @@ textarea {
   align-items: center;
 }
 
+#submit input {
+  background-color: white;
+}
+
 #formmobile {
   display: none;
   justify-content: center;
@@ -231,6 +246,10 @@ textarea {
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+  #content {
+    background-image: url('../images/IMG_2199(2).jpg')
+  }
 
   #maincontent {
     position: relative;
