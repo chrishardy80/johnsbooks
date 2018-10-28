@@ -32,7 +32,31 @@ $('#lognav').on('click',
       if( $(e.target).closest(".mobile").length > 0 ) {
         return false;
     }
-        $('.mobilenav').animate({'right': '-220'});
+        $('.mobilenav').animate({'right': '-450'});
     });
+
+    function inViewport($el) {
+    var elH = $el.outerHeight(),
+        H   = $(window).height(),
+        r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
+}
+
+$(window).on("scroll resize", function(){
+  if (inViewport($('#maincontent')) > 900 ) {
+    $('#homemob').addClass("orange");
+  }
+  else {
+    $('#homemob').removeClass("orange");
+  }
+
+  if (inViewport($('#formmobile')) > 900 ) {
+    $('#formmob').addClass("orange");
+  }
+  else {
+    $('#formmob').removeClass("orange");
+  }
+
+});
 }
 $(document).ready(main);
