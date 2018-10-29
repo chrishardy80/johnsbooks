@@ -44,17 +44,17 @@ $('#lognav').on('click',
 
 $(window).on("scroll resize", function(){
   if (inViewport($('#maincontent')) > 900 ) {
-    $('#homemob').addClass("orange");
+    $('#homemob').switchClass('brown', 'orange');
   }
   else {
-    $('#homemob').removeClass("orange");
+    $('#homemob').switchClass('orange', 'brown');
   }
 
   if (inViewport($('#formmobile')) > 900 ) {
-    $('#formmob').addClass("orange");
+    $('#formmob').switchClass('brown', 'orange');
   }
   else {
-    $('#formmob').removeClass("orange");
+    $('#formmob').switchClass('orange', 'brown');
   }
 
 });
